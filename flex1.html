@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about flex</title>
+</head>
+<style> 
+     /*container 1*/
+    .container1{
+       display: flex;
+       flex-direction: row;
+    }
+
+    .box1{
+        background-color: aquamarine;
+        width: 200px;
+    }
+
+    .box2{
+        background-color: rgb(11, 234, 118);
+        width: 75px;
+    }  
+
+    /*container 2*/
+    .container2{
+        display: flex;
+        flex-direction: row;
+        border: 1px solid black;
+    }
+
+    .item1{
+        background-color: beige;
+        width: 50px;
+    }
+
+    .item2{
+        background-color: rgb(100, 100, 217);
+        flex: 1;
+    }
+
+    .item3{
+        background-color: blueviolet;
+        width: 75px;
+    }
+
+    .container3{
+        display: flex;
+        flex-direction: row;
+        border: 1px solid black;
+        justify-content: space-between;
+    }
+
+    .item{
+        background-color: brown;
+    }
+
+    /*container 3*/
+    .container4{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        border: 1px solid gray;
+        height: 50px;
+    }
+
+    .card{
+        background-color: brown;
+    }
+</style>
+<body>
+     <p> (a). A flex with 2 iterms. Width = 200px| 75px</p>
+    <div class="container1">
+    <div class="box1">200px</div>
+    <div class="box2">75px</div>
+    </div><br>
+     
+    <p> (b). A flex with 3 iterms. Width = 50px|remaining space| 75px</p>
+    <div class="container2">
+        <div class="item1">item1</div>
+        <div class="item2">item2</div>
+        <div class="item3">item3</div>
+    </div><br>
+    
+    <p> (c). A flex with 4 iterms, spread evenly across the page</p>
+    <div class="container3">
+        <div class="item">item1</div>
+        <div class="item">item2</div>
+        <div class="item">item3</div>
+        <div class="item">item4</div>
+        </div><br>
+
+        <p> (d). A flex with height = 50px and a gray border</p>
+    <div class="container4">
+        <div class="card">item1</div>
+        <div class="card">item2</div>
+        </div>
+    </div>
+</body>
+</html>
