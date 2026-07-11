@@ -1,0 +1,435 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    background-color: rgb(256, 256, 256);
+    position:relative;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    padding: 0 16px;
+    justify-content: space-between;
+    border-bottom: 1px solid;
+     box-shadow: 0 10px 14px rgba(0,0,0, .1);
+}
+
+.header img {
+    width: 30px;
+    height: 30px;
+    top: 5px;
+     cursor: pointer;
+}
+
+.logo {
+    gap: 8px;
+    display: flex;
+    align-items: center; 
+}
+
+.youtube-logo img {
+    width: 30px;
+    height: 35px;
+}
+
+.text {
+    font-size: 20px;
+}
+
+.search-box {
+    max-width: 400px;
+    flex: 1;
+    display: flex;
+    align-items: center;
+   
+}
+
+.search-box input {
+    flex: 1;
+    display: flex;
+    border: 1px solid black;
+    padding: 10px 15px;
+  
+}
+
+.btn img{
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.btn{
+    position: relative;
+    display: inline-block;
+}
+
+.btn .text{
+    visibility: hidden;
+    position: absolute;
+    width: 70px;
+    padding: 5px;
+    text-align: center;
+    background-color: black;
+    z-index: 1;
+    font-size: 13px;
+    top: 42px;
+    left: 50%;
+    margin-left: -35px;
+    border-radius: 6px;
+    color: #fff;
+}
+.btn:hover .text{
+    visibility: visible;
+}
+
+.microphone{
+    position: relative;
+    display: inline-block;
+}
+
+.microphone .text{
+    position: absolute;
+    visibility: hidden;
+    width: 120px;
+    background-color: rgb(57, 54, 54);
+    color: #fff;
+    padding: 5px 0;
+    text-align: center;
+    border-radius: 6px;
+    z-index: 1;
+    top: 42px;
+    left: 80%;
+    margin-left: -65px;
+    font-size: 15px;
+}
+
+.microphone:hover .text{
+    visibility: visible;
+}
+
+.microphone img{
+    margin-left: 20px;
+    cursor: pointer;
+    background-color: rgb(226, 230, 232);
+    border-radius: 50%;
+    padding: 6px 7px;
+    font-size: 15px;
+}
+
+.topright-icon{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.video-btn{
+    position: relative;
+    display: inline-block;
+}
+
+.video-btn .text{
+    position: absolute;
+    visibility: hidden;
+    width: 70px;
+    background-color: rgb(57, 54, 54);
+    color: #fff;
+    padding: 5px 0;
+    text-align: center;
+    border-radius: 6px;
+    z-index: 1;
+    top: 42px;
+    left: 40px;
+    margin-left: -65px;
+    font-size: 15px;
+}
+
+.video-btn:hover .text{
+    visibility: visible;
+}
+
+.profile img{
+    height: 40px;
+    width: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+     cursor: pointer;
+}
+
+.apps{
+    position: relative;
+    display: inline-block;
+}
+
+.apps .text{
+    position: absolute;
+    visibility: hidden;
+    width: 120px;
+    background-color: rgb(57, 54, 54);
+    color: #fff;
+    padding: 5px 0;
+    text-align: center;
+    border-radius: 6px;
+    z-index: 1;
+    top: 42px;
+    left: 20px;
+    margin-left: -65px;
+    font-size: 15px;
+}
+
+.apps:hover .text{
+    visibility: visible;
+}
+
+.notification{
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.notification .text{
+    position: absolute;
+    visibility: hidden;
+    width: 120px;
+    background-color: rgb(57, 54, 54);
+    color: #fff;
+    padding: 5px 0;
+    text-align: center;
+    border-radius: 6px;
+    z-index: 1;
+    top: 42px;
+    left: 20px;
+    margin-left: -65px;
+    font-size: 15px;
+}
+
+.notification:hover .text{
+    visibility: visible;
+}
+.notification span{
+    position: absolute;
+    background-color: red;
+    padding: 0 3px;
+    border-radius: 50%;
+    right: 0;
+    top: 0;
+    color: white;
+    font-size: 13px;
+}  
+
+/* this is left side icons */
+.navbar{
+    position: fixed;
+    background-color: white;
+    height: 100vh;
+    width: 90px;
+    left: 0;
+    bottom: 0;
+    top: 50px;
+    overflow: hidden;
+    box-shadow: 0 10px 14px rgba(0,0,0, .1);
+    display: block;
+}
+
+.navbar ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: black;
+}
+
+.home img{
+    object-fit: cover;
+    width: 20px;
+    height: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 10px;
+}
+
+.home {
+    padding: 20px;
+    align-items: center;
+}
+
+.home:hover{
+    background-color: antiquewhite;
+   
+}
+.home span{
+    margin-left: 15px;
+    color: black;
+    text-decoration: none;
+    
+}
+
+.compass img{
+    display: flex;
+    height: 20px;
+    width: 20px;
+    object-fit: cover;
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 10px;
+}
+
+.compass span{
+    font-size: 13px;
+     margin-left: 5px;
+}
+
+.subscribe img{
+   object-fit: cover;
+    width: 20px;
+    height: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 10px;
+}
+
+.subscribe span{
+     font-size: 13px;
+     margin-left: 5px;
+}
+
+.play img{
+     object-fit: cover;
+    width: 20px;
+    height: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 10px;
+}
+
+.play span{
+     font-size: 13px;
+     margin-left: 5px;
+}
+
+.music img{
+    object-fit: cover;
+    width: 20px;
+    height: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 10px;
+}
+
+.music span{
+      font-size: 13px;
+     margin-left: 5px;
+}
+
+.Library img{
+    display: flex;
+     object-fit: cover;
+    width: 20px;
+    height: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 10px;
+}
+
+.Library span{
+    font-size: 13px;
+     margin-left: 10px;
+}
+  /* middle div */
+.middle-div{
+    margin-left: 110px;
+    margin-top: 20px;
+    margin-right: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: white;
+    gap: 20px;    
+}
+
+.row{
+    position: relative;
+    height: 270px;
+    width: 100%;  
+}
+ 
+/* picha kubwa */
+.row img{
+    object-fit: cover;
+    height: 150px;
+    width: 100%;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.row img:hover{
+        transform: scale(1.1);
+}
+
+.row .time{
+    position: relative;
+}
+.row .time{
+    position: absolute;
+    right: 5px;
+    bottom: 170px;
+    background-color: black;
+    color: #fff;
+    
+}
+
+.p-profile{
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.p-profile h5{
+      margin-top: 10px;
+}
+.p-profile img{
+    object-fit: cover;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+
+.p-profile p{
+    color: gray;
+    font-size: 15px;
+}
+
+@media all and (max-width: 800px){
+    .middle-div{
+        grid-template-areas: row;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+ }
+
+ @media all and (max-width: 600px){
+    .middle-div{
+        grid-template-areas: row;
+        grid-template-columns: 1fr 1fr ;
+    }
+ }
+ /* @media all and (max-width: 400px){
+    .middle-div{
+        grid-template-areas: row;
+        grid-template-columns: 1fr ;
+    }
+} */
+
+ @media all and (max-width: 400px){
+    .middle-div{
+        grid-template-areas: column;
+        grid-template-columns: 1fr;
+    }
+ }
+ 
