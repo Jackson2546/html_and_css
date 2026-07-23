@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title Page</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .header{
+        background: rgb(58, 205, 139);
+        padding: 60px;
+        text-align: center;
+        color: white;
+    }
+    .header p{
+        margin-top: 10px;
+    }
+
+    .navbar{
+        background-color: black;
+        display: flex;
+        padding: 14px;
+        box-shadow: 0 7px 10px rgba(3, 3, 3, .4);
+    }
+
+    .topnav a{
+        color: white;
+        text-decoration: none;
+        margin-right: 15px;
+        padding: 14px 16px;
+        transition: 2s;
+    }
+
+    .topnav a:hover{
+        background-color: antiquewhite;
+        color: black;
+    }
+
+    .row{
+        display: flex;
+        flex-wrap: wrap;
+       
+    }
+
+    .side{
+        flex: 30%;
+        background-color: #ccc;
+        padding: 20px;
+    }
+
+    .main{
+        flex: 70%;
+        background-color: white;
+        padding: 20px;
+    }
+
+    .fakeimg{
+        width: 100%;
+        padding: 20px;
+        background-color: #aaa;
+        margin: 10px;
+    }
+    .footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+    @media screen and (max-width:600px){
+        .topnav a{
+          flex-direction: column;
+        }
+    }
+    @media screen and (max-width:600px){
+        .row{
+          flex-direction: column;
+        }
+    }
+
+    @media screen and (max-width:600px){
+        .topnav a{
+          display: block;
+           padding: 14px 16px;
+
+        }
+    }
+</style>
+<body>
+    <div class="header">
+        <h1>My Website</h1>
+        <p>with a <b>Flexible</b>layout</p>
+    </div>
+
+    <div class="navbar">
+        <div class="topnav">
+            <a href="#">link 1</a>
+            <a href="#">link 2</a>
+            <a href="#">link 3</a>
+            <a href="#">link 4</a>
+            <a href="#">link 5</a>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="side">
+            <h3>About Me</h3>
+            <h5>Photo of me:</h5>
+            <div class="fakeimg" style="height: 200px;">Image</div>
+            <p>some information about me</p>
+            <h3>More Text</h3>
+            <p>another information about me</p>
+            <div class="fakeimg" style="height: 200px;">image</div>
+            <div class="fakeimg" style="height: 200px;">image</div>
+            <div class="fakeimg" style="height: 200px;">image</div>
+        </div>
+
+        <div class="main">
+       <h1>TITLE HEADING</h1>
+       <P>Title Description July 22, 2026</P>
+         <div class="fakeimg" style="height:200px;">Image</div>
+           <p>Some text..</p>
+    <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    <br>
+    <h2>TITLE HEADING</h2>
+    <h5>Title description, Sep 2, 2017</h5>
+    <div class="fakeimg" style="height:200px;">Image</div>
+    <p>Some text..</p>
+    <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+  </div>
+</div>
+    </div>
+
+    
+
+<!-- Footer -->
+<div class="footer">
+  <h2>Footer</h2>
+</div>
+
+    </div>
+
+</body>
+</html>
